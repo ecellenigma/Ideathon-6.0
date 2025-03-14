@@ -1,12 +1,5 @@
 import React from "react"
-
-const LINKS = {
-  EMAIL: "ecell@nmit.ac.in",
-  FACEBOOK: "https://www.facebook.com/ecellnmit/",
-  INSTAGRAM: "https://www.instagram.com/ecellnmit/",
-  LINKEDIN: "https://www.linkedin.com/company/enigma-e-cell-nmit/",
-  CONTACT: "+91-4545-3753",
-};
+import { LINKS } from "../constants";
 
 export default function Footer() {
   return (
@@ -14,22 +7,30 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between">
         
         <div className="md:w-1/3 mb-6 md:mb-0">
-          <h2 className="text-xl font-bold uppercase tracking-wide">CONTACT US</h2>
+            <h2 className="text-xl font-bold uppercase tracking-wide">CONTACT US</h2>
             <div className="flex items-center space-x-4 mt-2">
                 <img
                     src="src/assets/call.svg"
-                    alt="Question Mark"
+                    alt="Call img"
                     className="h-8 w-8"
                 />
-                <p className="mt-2">{LINKS.CONTACT}</p>
+                <p>Aniketh: {LINKS.CONTACTS.ANIKETH}</p>
+            </div>
+            <div className="flex items-center space-x-4 mt-2">
+                <img
+                    src="src/assets/call.svg"
+                    alt="Call img"
+                    className="h-8 w-8"
+                />
+                <p>Jahnavi: {LINKS.CONTACTS.JAHNAVI}</p>
             </div>
             <div className="flex items-center space-x-4 mt-2">
                 <img
                     src="src/assets/mail.svg"
-                    alt="Question Mark"
+                    alt="Mail img"
                     className="h-8 w-8"
                 />
-                <p className="mt-1">{LINKS.EMAIL}</p>
+                <p>{LINKS.EMAIL}</p>
             </div>
         </div>
         
