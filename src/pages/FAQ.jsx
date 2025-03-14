@@ -9,7 +9,7 @@ export default function FAQ() {
 return (
     <div className="p-10 bg-[#0A0E16] text-white">
     <h1 className="text-center text-3xl font-bold text-[#00E0FF] mb-8">
-        Faqs
+        FAQs
     </h1>
 
     <Accordion
