@@ -1,5 +1,13 @@
 import React from "react"
 
+const LINKS = {
+  EMAIL: "ecell@nmit.ac.in",
+  FACEBOOK: "https://www.facebook.com/ecellnmit/",
+  INSTAGRAM: "https://www.instagram.com/ecellnmit/",
+  LINKEDIN: "https://www.linkedin.com/company/enigma-e-cell-nmit/",
+  CONTACT: "+91-4545-3753",
+};
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white w-full">
@@ -13,7 +21,7 @@ export default function Footer() {
                     alt="Question Mark"
                     className="h-8 w-8"
                 />
-                <p className="mt-2">+91-4545-3753</p>
+                <p className="mt-2">{LINKS.CONTACT}</p>
             </div>
             <div className="flex items-center space-x-4 mt-2">
                 <img
@@ -21,7 +29,7 @@ export default function Footer() {
                     alt="Question Mark"
                     className="h-8 w-8"
                 />
-                <p className="mt-1">Soul2@gmail.com</p>
+                <p className="mt-1">{LINKS.EMAIL}</p>
             </div>
         </div>
         
@@ -50,7 +58,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-center space-x-6"> {/* social icons */}
         <a 
-          href="https://instagram.com" 
+          href={LINKS.INSTAGRAM}
           target="_blank" 
           rel="noopener noreferrer"
         >
@@ -61,7 +69,7 @@ export default function Footer() {
           />
         </a>
         <a 
-          href="https://facebook.com" 
+          href={LINKS.FACEBOOK}
           target="_blank" 
           rel="noopener noreferrer"
         >
@@ -72,7 +80,7 @@ export default function Footer() {
           />
         </a>
         <a 
-          href="https://linkedin.com" 
+          href={LINKS.LINKEDIN}
           target="_blank" 
           rel="noopener noreferrer"
         >
@@ -83,9 +91,7 @@ export default function Footer() {
           />
         </a>
         <a 
-          href="mailto:Soul2@gmail.com" 
-          target="_blank" 
-          rel="noopener noreferrer"
+          href={`mailto:${LINKS.EMAIL}`} 
         >
           <img 
             src="src/assets/mail.svg"
