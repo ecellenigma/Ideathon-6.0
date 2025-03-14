@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between">
         
         <div className="md:w-1/3 mb-6 md:mb-0">
-            <h2 className="text-xl font-bold uppercase tracking-wide">CONTACT US</h2>
+            <h2 className="pl-15 text-xl font-bold uppercase tracking-wide">CONTACT US</h2>
             <div className="flex items-center space-x-4 mt-2">
                 <img
                     src="src/assets/call.svg"
