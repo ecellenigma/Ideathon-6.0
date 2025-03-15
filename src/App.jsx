@@ -9,6 +9,7 @@ import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import DottedParticles from './components/Dotted';
+import LoadingAnimation from './components/LoadingAnimation';
 
 const App = () => {
     const [loadingComplete, setLoadingComplete] = useState(false);
