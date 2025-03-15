@@ -1,9 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from "@tsparticles/slim";
 
-
-const Particle = () => {
+const DottedParticles = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -14,10 +13,6 @@ const Particle = () => {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
   const options = useMemo(
     () => ({
       background: {
@@ -26,79 +21,47 @@ const Particle = () => {
         },
       },
       fpsLimit: 120,
-      interactivity: {
-        events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
-        modes: {
-          push: {
-            quantity: 4,
-          },
-          repulse: {
-            distance: 200,
-            duration: 2,
-          },
-        },
-      },
       particles: {
-        color: {
-          value: "#ffffff",
-        },
-        links: {
-          color: "#ffffff",
-          distance: 150,
-          enable: true,
-          opacity: 0.3,
-          width: 1,
-        },
-        move: {
-          direction: "none",
-          enable: true,
-          outModes: {
-            default: "bounce",
-          },
-          random: false,
-          speed: 2,
-          straight: false,
-        },
         number: {
+          value: 450,
           density: {
             enable: true,
+            area: 800,
           },
-          value: 80,
         },
-        opacity: {
-          value: 0.2,
+        color: {
+          value: "#00E0FF",
         },
         shape: {
           type: "circle",
         },
+        opacity: {
+          value: 0.8,
+          random: false,
+        },
         size: {
-          value: { min: 1, max: 2 },
+          value: { min: 0.7, max: 0.8 },
+          random: true,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: true,
+          straight: false,
+          outModes: {
+            default: "out",
+          },
         },
       },
       detectRetina: true,
     }),
-    [],
+    []
   );
 
-  if (init) {
-    return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
-    );
-  }
+  if (!init) return null;
 
-  return <></>;
+  return <Particles id="tsparticles" options={options} />;
 };
-export default Particle;
+
+export default DottedParticles;

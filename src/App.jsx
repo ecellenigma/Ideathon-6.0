@@ -1,4 +1,5 @@
-
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
 import Landing from './pages/Landing';
 import About from './pages/About';
 import Tracks from './pages/Tracks';
@@ -7,32 +8,41 @@ import WhatsInIt from './pages/WhatsInIt';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import Particle from './components/Particle';
 import DottedParticles from './components/Dotted';
+import LoadingAnimation from './components/LoadingAnimation';
 
-function App() {
+const App = () => {
+    const [loadingComplete, setLoadingComplete] = useState(false);
+
+    const handleLoadingComplete = () => {
+        setLoadingComplete(true);
+    };
+
     return (
-        <div>
-            <div className="absolute inset-0">
-                 {/* <Particle />  */}
-                 <DottedParticles/> 
-         
-            </div>
-            <div className='relative z-10'>
-            <Landing />
-            <About />
-            <Tracks />
-            <Prizes />
-            <WhatsInIt />
-            <FAQ />
-            <Contact />
-            <Footer />
-            </div>
-         
+        <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
+            {!loadingComplete && <LoadingAnimation onLoadingComplete={handleLoadingComplete} />}
+            {loadingComplete && (
+                <div className="relative">
+                    <div className="absolute inset-0 z-0">
+                        <DottedParticles />
+                    </div>
+                    <div className="relative z-10">
+                        <Navbar />
+                        <Landing />
+                        <About />
+                        <Tracks />
+                        <Prizes />
+                        <WhatsInIt />
+                        <FAQ />
+                        <Contact />
+                        <Footer />
+                    </div>
+                </div>
+            )}
         </div>
         
         
     );
-}
+};
 
 export default App;
