@@ -8,8 +8,7 @@ import WhatsInIt from './pages/WhatsInIt';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import Particle from './components/Particle';
-import LoadingAnimation from './components/LoadingAnimation';
+import DottedParticles from './components/Dotted';
 
 const App = () => {
     const [loadingComplete, setLoadingComplete] = useState(false);
@@ -24,7 +23,7 @@ const App = () => {
             {loadingComplete && (
                 <div className="relative">
                     <div className="absolute inset-0 z-0">
-                        <Particle />
+                        <DottedParticles />
                     </div>
                     <div className="relative z-10">
                         <Navbar />
@@ -40,6 +39,8 @@ const App = () => {
                 </div>
             )}
         </div>
+        
+        
     );
 };
 

@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function FAQ() {
+function FAQ() {
   return (
-    <div>FAQ</div>
+    <div>
+      
+    </div>
   )
 }
+
+export default FAQ

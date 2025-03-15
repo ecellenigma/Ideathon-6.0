@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function Card() {
+function Card() {
   return (
-    <div>Card</div>
+    <div>
+      
+    </div>
   )
 }
+
+export default Card
