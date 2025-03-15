@@ -14,9 +14,11 @@ function App() {
     return (
         <div>
             <div className="absolute inset-0">
-                 <Particle /> 
-                 {/* <DottedParticles/>  */}
+                 {/* <Particle />  */}
+                 <DottedParticles/> 
+         
             </div>
+            <div className='relative z-10'>
             <Landing />
             <About />
             <Tracks />
@@ -25,7 +27,11 @@ function App() {
             <FAQ />
             <Contact />
             <Footer />
+            </div>
+         
         </div>
+        
+        
     );
 }
 

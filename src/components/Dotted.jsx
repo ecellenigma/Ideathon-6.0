@@ -23,7 +23,7 @@ const DottedParticles = () => {
       fpsLimit: 120,
       particles: {
         number: {
-          value: 600,
+          value: 450,
           density: {
             enable: true,
             area: 800,
@@ -37,10 +37,10 @@ const DottedParticles = () => {
         },
         opacity: {
           value: 0.8,
-          random: true,
+          random: false,
         },
         size: {
-          value: { min: 1, max: 2 },
+          value: { min: 0.7, max: 0.8 },
           random: true,
         },
         move: {

@@ -43,13 +43,14 @@ const Navbar = () => {
                                 Certificate
                             </button>
                         </div>
-                        <div className="flex items-center">
+                        <button onClick={() => window.open("https://www.ecellnmit.in/", "_blank")} className="flex items-center">
+                            
                             <img
                                 src={enigma}
                                 alt="Ideathon Logo"
                                 className="h-8 w-auto "
                             />
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
