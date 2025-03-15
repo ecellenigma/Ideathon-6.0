@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Landing from './pages/Landing';
 import About from './pages/About';
@@ -7,21 +8,39 @@ import WhatsInIt from './pages/WhatsInIt';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import Particle from './components/Particle';
+import LoadingAnimation from './components/LoadingAnimation';
 
-function App() {
+const App = () => {
+    const [loadingComplete, setLoadingComplete] = useState(false);
+
+    const handleLoadingComplete = () => {
+        setLoadingComplete(true);
+    };
+
     return (
-        <div>
-            <Navbar />
-            <Landing />
-            <About />
-            <Tracks />
-            <Prizes />
-            <WhatsInIt />
-            <FAQ />
-            <Contact />
-            <Footer />
+        <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
+            {!loadingComplete && <LoadingAnimation onLoadingComplete={handleLoadingComplete} />}
+            {loadingComplete && (
+                <div className="relative">
+                    <div className="absolute inset-0 z-0">
+                        <Particle />
+                    </div>
+                    <div className="relative z-10">
+                        <Navbar />
+                        <Landing />
+                        <About />
+                        <Tracks />
+                        <Prizes />
+                        <WhatsInIt />
+                        <FAQ />
+                        <Contact />
+                        <Footer />
+                    </div>
+                </div>
+            )}
         </div>
     );
-}
+};
 
 export default App;
