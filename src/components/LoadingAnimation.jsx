@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import videoSrc from '../assets/enigma_blue.webm';
+import videoSrc from '../assets/enigmafinal.mp4';
 import './LoadingAnimation.css';
 
 const LoadingAnimation = ({ onLoadingComplete }) => {
@@ -14,7 +14,7 @@ const LoadingAnimation = ({ onLoadingComplete }) => {
         const loadingTimer = setTimeout(() => {
             setLoading(false);
             onLoadingComplete();
-        }, 5000);
+        }, 8000);
 
         return () => {
             clearTimeout(typewriterTimer);
@@ -23,7 +23,7 @@ const LoadingAnimation = ({ onLoadingComplete }) => {
     }, [onLoadingComplete]);
 
     return (
-        <div className="fixed inset-0 flex flex-col items-center justify-center bg-[#070d13] z-50">
+        <div className="fixed inset-0 flex flex-col items-center justify-center bg-[#060d19] z-50">
             {loading ? (
                 <>
                     <div className="relative flex flex-col items-center">
