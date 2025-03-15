@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+
 import Landing from './pages/Landing';
 import About from './pages/About';
 import Tracks from './pages/Tracks';
@@ -7,11 +7,16 @@ import WhatsInIt from './pages/WhatsInIt';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import Particle from './components/Particle';
+import DottedParticles from './components/Dotted';
 
 function App() {
     return (
         <div>
-            <Navbar />
+            <div className="absolute inset-0">
+                 <Particle /> 
+                 {/* <DottedParticles/>  */}
+            </div>
             <Landing />
             <About />
             <Tracks />
