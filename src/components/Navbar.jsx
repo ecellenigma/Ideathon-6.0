@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import ideathon from "../assets/ideathon.svg";
@@ -7,11 +6,18 @@ import icon from "../assets/icontop.svg";
 import enigma from "../assets/enigma.svg";
 
 const Navbar = () => {
-
     const [isOpen, setIsOpen] = useState(false);
 
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+            setIsOpen(false);
+        }
+    };
+
     return (
-        <nav className="bg-[#030B15] text-white px-4 py-3 z-30 absolute w-full">
+        <nav className="bg-[#030B15] text-white px-4 py-3 z-30 fixed w-full">
             <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-2">
                     <img src={icon} alt="Logo" className="h-6 w-auto" />
@@ -20,11 +26,11 @@ const Navbar = () => {
                 </div>
 
                 <ul className="hidden md:flex space-x-10">
-                    <li><a href="#home" className="hover:text-[#00C4F4] transition-colors">Home</a></li>
-                    <li><a href="#about" className="hover:text-[#00C4F4] transition-colors">About</a></li>
-                    <li><a href="#tracks" className="hover:text-[#00C4F4] transition-colors">Tracks</a></li>
-                    <li><a href="#faqs" className="hover:text-[#00C4F4] transition-colors">FAQs</a></li>
-                    <li><a href="#contact" className="hover:text-[#00C4F4] transition-colors">Contact</a></li>
+                    <li><a href="#home" onClick={() => handleScroll('home')} className="hover:text-[#00C4F4] transition-colors cursor-pointer">Home</a></li>
+                    <li><a href="#about" onClick={() => handleScroll('about')} className="hover:text-[#00C4F4] transition-colors cursor-pointer">About</a></li>
+                    <li><a href="#tracks" onClick={() => handleScroll('tracks')} className="hover:text-[#00C4F4] transition-colors cursor-pointer">Tracks</a></li>
+                    <li><a href="#faqs" onClick={() => handleScroll('faqs')} className="hover:text-[#00C4F4] transition-colors cursor-pointer">FAQs</a></li>
+                    <li><a href="#contact" onClick={() => handleScroll('contact')} className="hover:text-[#00C4F4] transition-colors cursor-pointer">Contact</a></li>
                 </ul>
 
                 <div className="md:hidden">
@@ -49,17 +55,17 @@ const Navbar = () => {
                     animate={{ x: 0 }}
                     exit={{ x: "-100%" }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="fixed top-0 left-4 w-3/4 h-full bg-[#030B15] text-white flex flex-col items-start space-y-6 p-6 z-40 shadow-lg"
+                    className="fixed top-0 right-4 w-3/4 h-full bg-[#030B15] text-white flex flex-col items-start space-y-6 p-6 z-40 shadow-lg"
                 >
                     <button onClick={() => setIsOpen(false)} className="text-2xl self-end">
                         ✖
                     </button>
 
-                    <a href="#home" className="hover:text-[#00C4F4]">Home</a>
-                    <a href="#about" className="hover:text-[#00C4F4]">About</a>
-                    <a href="#tracks" className="hover:text-[#00C4F4]">Tracks</a>
-                    <a href="#faqs" className="hover:text-[#00C4F4]">FAQs</a>
-                    <a href="#contact" className="hover:text-[#00C4F4]">Contact</a>
+                    <a href="#home" onClick={() => handleScroll('home')} className="hover:text-[#00C4F4] cursor-pointer">Home</a>
+                    <a href="#about" onClick={() => handleScroll('about')} className="hover:text-[#00C4F4] cursor-pointer">About</a>
+                    <a href="#tracks" onClick={() => handleScroll('tracks')} className="hover:text-[#00C4F4] cursor-pointer">Tracks</a>
+                    <a href="#faqs" onClick={() => handleScroll('faqs')} className="hover:text-[#00C4F4] cursor-pointer">FAQs</a>
+                    <a href="#contact" onClick={() => handleScroll('contact')} className="hover:text-[#00C4F4] cursor-pointer">Contact</a>
 
                     <button className="bg-[#00E0FF] text-[#030B15] px-4 py-2 rounded hover:bg-[#00C4F4] transition-colors duration-300">
                         Certificate
@@ -69,8 +75,6 @@ const Navbar = () => {
                     </button>
                 </motion.div>
             )}
-
-   
         </nav>
     );
 };

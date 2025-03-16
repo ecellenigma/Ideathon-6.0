@@ -5,10 +5,10 @@ import PrizePoolHeader from '../assets/prizepool.svg';
 const Prizes = () => {
     return (
         <div className="text-white relative flex flex-col items-center min-h-screen snap-start">
-            <img src={TheFinalsHeader} alt="The Finals" className="mx-auto mt-20 mb-6" />
+            <img src={TheFinalsHeader} alt="The Finals" className="mx-auto mt-24 mb-6" />
             <img src={PrizePoolHeader} alt="Prize Pool" className="mx-auto mb-2" />
             
-            <div className="text-center mt-12 mb-2">
+            <div className="text-center mb-2">
                 <p className="text-[#ffffff] mt-10 text-5xl font-['Delivery']">Rs 80,000</p>
             </div>
             
@@ -31,7 +31,7 @@ const Prizes = () => {
             </div>
             
             <div className="mt-auto max-w-5xl mx-auto text-center px-4 mb-8">
-                <p className="text-white font-['Montserrat'] text-[20px] sm:text-[24px] md:text-[28px] leading-relaxed">
+                <p className="text-white font-['Montserrat'] text-[2vh] sm:text-[24px] md:text-[28px] leading-relaxed">
                     Get mentored, experience, funding and other added benefits.
                 </p>
             </div>
