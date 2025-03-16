@@ -12,6 +12,7 @@ return (
     <section id="faqs" className="p-10 text-white snap-start">
     <img 
       src="src/assets/faqs.svg"
+      alt="FAQs Section"
       className="mx-auto my-10"
     />
 
