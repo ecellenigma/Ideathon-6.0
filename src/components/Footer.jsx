@@ -1,9 +1,9 @@
 import React from "react"
 import { LINKS } from "../constants";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-black text-white w-full">
+    <footer className="text-white w-full">
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between">
         
         <div className="md:w-1/3 mb-6 md:mb-0">
@@ -104,3 +104,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export default Footer;

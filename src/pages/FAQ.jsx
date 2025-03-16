@@ -7,9 +7,9 @@ import {
 
 import { FAQS } from "../constants";
   
-export default function FAQ() {
+const FAQ = () => {
 return (
-    <div className="p-10 bg-[#0A0E16] text-white">
+    <section className="p-10 text-white">
     <img 
       src="src/assets/faqs.svg"
       className="mx-auto my-10"
@@ -43,6 +43,8 @@ return (
           </AccordionItem>  
         ))}
     </Accordion>
-    </div>
+    </section>
 )
 }
+
+export default FAQ;
