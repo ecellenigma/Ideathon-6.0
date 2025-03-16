@@ -25,10 +25,10 @@ const Tracks = () => {
                         <div className="bg-[#1c1c24] rounded-full p-4 mb-4 flex items-center justify-center">
                             <img src={prototypeIcon} alt="Prototype Icon" className="w-10 h-10" />
                         </div>
-                        <p className="text-[4vh] text-[#00e5ff] mb-3 font-['Montserrat'] text-left">
+                        <p className="lg:text-[4vh] md:text-[3vh] text-[#00e5ff] mb-3 font-['Montserrat'] text-left">
                             Prototype Track
                         </p>
-                        <p className="text-white text-[3vh] leading-tight font-['Montserrat'] text-left">
+                        <p className="text-white lg:text-[3vh] md:text-[2vh]  leading-tight font-['Montserrat'] text-left">
                             Ready to showcase your business idea? Impress judges and investors with a killer prototype that demonstrates its feasibility and uniqueness! Show off your creativity and innovation with a physical or digital model.
                         </p>
                     </div>
@@ -38,10 +38,10 @@ const Tracks = () => {
                         <div className="bg-[#1c1c24]  rounded-full p-4 mb-4 flex items-center justify-center">
                             <img src={ideationIcon} alt="Ideation Icon" className="w-10 h-10" />
                         </div>
-                        <p className="text-[4vh] text-[#00e5ff] font-medium mb-3 font-['Montserrat'] text-left">
+                        <p className="lg:text-[4vh] md:text-[3vh] text-[#00e5ff] font-medium mb-3 font-['Montserrat'] text-left">
                             Ideation Track
                         </p>
-                        <p className="text-white text-[3vh] leading-tight font-['Montserrat'] text-left">
+                        <p className="text-white lg:text-[3vh] md:text-[2vh] leading-tight font-['Montserrat'] text-left">
                             It's time to brainstorm and refine your business idea! Analyze the market, identify gaps, and use techniques like mind mapping and SWOT analysis to develop your concept. Let your creativity run wild to become a successful young entrepreneur!
                         </p>
                     </div>
