@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+
 import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import ideathon from "../assets/ideathon.svg";
 import six from "../assets/6.0.svg";
 import icon from "../assets/icontop.svg";
 import enigma from "../assets/enigma.svg";
 
 const Navbar = () => {
+
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -67,6 +69,8 @@ const Navbar = () => {
                     </button>
                 </motion.div>
             )}
+
+   
         </nav>
     );
 };

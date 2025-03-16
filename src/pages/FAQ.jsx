@@ -3,15 +3,16 @@ import {
     AccordionItem,
     AccordionTrigger,
     AccordionContent,
-  } from "@/components/ui/accordion"
+  } from "../components/ui/accordion";
 
 import { FAQS } from "../constants";
   
 const FAQ = () => {
 return (
-    <section className="p-10 text-white snap-start">
+    <section id="faqs" className="p-10 text-white snap-start">
     <img 
       src="src/assets/faqs.svg"
+      alt="FAQs Section"
       className="mx-auto my-10"
     />
 

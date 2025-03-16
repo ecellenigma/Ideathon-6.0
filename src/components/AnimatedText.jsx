@@ -1,4 +1,5 @@
-import { motion, animate, useMotionValue } from "framer-motion";
+// eslint-disable-next-line no-unused-vars
+import { animate, useMotionValue, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import I from "../assets/text/I.svg";
 import D from "../assets/text/D.svg";
@@ -69,7 +70,7 @@ export default function RedoAnimText() {
           key={index}
           src={letter}
           alt={`Letter ${index}`}
-          initial={{ opacity: 0, y: -10, scale: 0.5 }}
+          initial={{ opacity: 0, y: -10, scale: 1 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           // transition={{ duration: 0.2, delay: index * 0.1 }} 
           className="md:h-16 md:w-16 h-10 w-10"

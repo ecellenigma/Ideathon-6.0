@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import videoSrc from '../assets/enigmafinal.mp4';
+import videoSrc from '../assets/enigma.mp4';
 import './LoadingAnimation.css';
 
 const LoadingAnimation = ({ onLoadingComplete }) => {
@@ -34,11 +34,11 @@ const LoadingAnimation = ({ onLoadingComplete }) => {
                                 autoPlay
                                 loop
                                 preload="metadata"
-                                className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 mb-4 transition-opacity duration-1000 ease-in-out opacity-0 absolute top-0"
-                                style={{ backgroundColor: 'transparent', top: '-10rem' }}
+                                className="w-32 h-32 sm:w-32 sm:h-32 md:w-48 md:h-48 mb-4 transition-opacity duration-1000 ease-in-out opacity-0 absolute top-0"
+                                style={{ backgroundColor: 'transparent', top: '-9rem' }}
                                 onLoadedData={(e) => e.target.classList.remove('opacity-0')}
                             >
-                                <source id="video-source" style={{ backgroundColor: 'transparent' }} src={videoSrc} type="video/webm" />
+                                <source id="video-source" style={{ backgroundColor: 'transparent' }} src={videoSrc} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         )}
