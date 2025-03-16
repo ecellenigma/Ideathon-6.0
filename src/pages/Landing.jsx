@@ -1,4 +1,5 @@
 import React from "react";
+/* eslint-disable-next-line */
 import { motion } from "framer-motion";
 import heroSvg from "../assets/icontop.svg";
 
@@ -9,7 +10,7 @@ import RedoAnimText from "../components/AnimatedText";
 
 const Landing = () => {
     return (
-        <section className="text-white h-screen relative overflow-hidden">
+        <section id='home' className="text-white h-screen relative overflow-hidden snap-start">
 
             <Navbar />
 
@@ -42,7 +43,7 @@ const Landing = () => {
                 </div>
 
                 <div>
-                    <h1 style={{ fontFamily: 'Tektur, sans-serif' }} className="text-2xl md:text-3xl font-bold"> Entrepreneurs  ka
+                    <h1 style={{ fontFamily: 'Montserrat, sans-serif' }} className="text-2xl md:text-3xl font-bold"> Entrepreneurs  Ka
                         Apna  Battlefield
                     </h1>
                 </div>
@@ -50,7 +51,7 @@ const Landing = () => {
                     whileHover={{ scale: 1.05 }}
                     onClick={() => window.open("https://unstop.com/o/gsh9n8J?lb=4jXsa3G&utm_medium=Share&utm_source=shortUrl", "_blank")}
                     whileTap={{ scale: 0.95 }}
-                    className="px-6 py-2 mt-10 font-medium bg-[#00C4F4] text-white transition-all cursor-alias  shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px]  hover:translate-y-[3px]"
+                    className="px-6 py-2 rounded cursor-pointer mt-10 font-medium bg-[#00C4F4] text-white transition-all cursor-alias  shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px]  hover:translate-y-[3px]"
                 >
                     Apply Now
                 </motion.button>

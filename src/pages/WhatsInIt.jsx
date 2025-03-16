@@ -21,7 +21,7 @@ const WhatsInIt = () => {
 
     return (
         <div className="text-white relative flex flex-col items-center min-h-screen snap-start" onMouseMove={handleMouseMove}>
-            <img src={Whats} alt="What's in it for you?" className="mx-auto mt-12 mb-12" />
+            <img src={Whats} alt="What's in it for you?" className="mx-auto mt-20 mb-12" />
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl mx-auto">
                 <Tilt className="Tilt" tiltMaxAngleX={12} tiltMaxAngleY={12} scale={1.03} transitionSpeed={2000}>
