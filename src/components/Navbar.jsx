@@ -35,7 +35,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="text-white px-1 py-1 z-30 w-full fixed ">
+        <nav className="text-white bg-[#060d19] px-1 py-1 z-30 w-full fixed ">
             <div className="grid grid-cols-[1fr_2fr_1fr] gap-4 w-full p-4">
                 <div>
                     <div className="flex items-center mr-2.5 space-x-2">
