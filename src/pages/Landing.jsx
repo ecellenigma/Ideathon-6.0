@@ -9,7 +9,7 @@ import RedoAnimText from "../components/AnimatedText";
 
 const Landing = () => {
     return (
-        <section className="text-white h-screen relative overflow-hidden">
+        <section className="text-white h-screen relative overflow-hidden snap-start">
 
             <Navbar />
 
