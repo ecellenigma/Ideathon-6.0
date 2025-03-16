@@ -42,7 +42,7 @@ const Landing = () => {
                 </div>
 
                 <div>
-                    <h1 style={{ fontFamily: 'Michroma, sans-serif' }} className="text-2xl md:text-3xl font-bold"> Innovators  Ka
+                    <h1 style={{ fontFamily: 'Montserrat, sans-serif' }} className="text-2xl md:text-3xl font-bold"> Innovators  Ka
                         Apna  Battlefield
                     </h1>
                 </div>
