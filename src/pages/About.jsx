@@ -3,7 +3,7 @@ import AboutIdeathonHeader from '../assets/AboutIdeathon.svg';
 
 const About = () => {
     return (
-        <div className="text-white relative flex flex-col items-center min-h-screen snap-start">
+        <div id='about' className="text-white relative flex flex-col items-center min-h-screen snap-start">
             <img src={AboutIdeathonHeader} alt="About Ideathon" className="mx-auto mt-8 mb-8" />
             <div className="max-w-5xl mx-auto px-4">
                 <p className="text-white mt-4 font-['Montserrat'] text-[28px] leading-relaxed text-center">
