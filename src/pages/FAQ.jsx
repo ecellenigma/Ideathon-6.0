@@ -6,12 +6,14 @@ import {
   } from "../components/ui/accordion";
 
 import { FAQS } from "../constants";
-  
+import Faqs from "../assets/faqs.svg";
+import QuestionMark from "../assets/question mark.svg"; 
+
 const FAQ = () => {
 return (
     <section id="faqs" className="p-10 text-white snap-start">
     <img 
-      src="src/assets/faqs.svg"
+      src={Faqs}
       alt="FAQs Section"
       className="mx-auto my-10"
     />
@@ -30,7 +32,7 @@ return (
               <div className="flex items-center space-x-3">
               <div className="h-8 w-8 flex items-center justify-center bg-[#1E2A3E] rounded-full">
                   <img
-                    src="src/assets/question mark.svg"
+                    src={QuestionMark}
                     alt="Question Mark"
                     className="h-4 w-4"
                   />
