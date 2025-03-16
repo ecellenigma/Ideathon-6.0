@@ -3,7 +3,7 @@ import { LINKS } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-[#030B15] w-full snap-start">
+    <footer id='contact' className="text-white bg-[#030B15] w-full snap-start">
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between">
         
         <div className="md:w-1/3 mb-6 md:mb-0">
