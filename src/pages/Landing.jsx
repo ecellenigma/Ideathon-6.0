@@ -10,9 +10,7 @@ import RedoAnimText from "../components/AnimatedText";
 const Landing = () => {
     return (
         <section className="text-white h-screen relative overflow-hidden snap-start">
-
             <Navbar />
-
             <motion.div
                 className="relative z-10 h-full container mx-auto flex flex-col items-center justify-center text-center"
                 initial={{ opacity: 0 }}
@@ -28,7 +26,7 @@ const Landing = () => {
                             alt=""
                             initial={{ scale: 1, filter: "drop-shadow(0px 0px 0px rgba(255,255,255,0))" }} 
                             whileHover={{
-                                scale: 1.1, // Slight zoom effect
+                                scale: 1.1, 
                                 filter: "drop-shadow(0px 0px 30px rgba(255,255,255,0.8))", 
                             }}
                             transition={{ duration: 0.2, ease: "easeInOut" }} 
@@ -42,7 +40,7 @@ const Landing = () => {
                 </div>
 
                 <div>
-                    <h1 style={{ fontFamily: 'Tektur, sans-serif' }} className="text-2xl md:text-3xl font-bold"> Entrepreneurs  ka
+                    <h1 style={{ fontFamily: 'Tektur, sans-serif' }} className="text-4xl font-tektur md:text-3xl font-bold"> Entrepreneurs  ka
                         Apna  Battlefield
                     </h1>
                 </div>
