@@ -34,7 +34,7 @@ const LoadingAnimation = ({ onLoadingComplete }) => {
                                 autoPlay
                                 loop
                                 preload="metadata"
-                                className="w-32 h-32 sm:w-32 sm:h-32 md:w-48 md:h-48 mb-4 transition-opacity duration-1000 ease-in-out opacity-0 absolute top-0"
+                                className="w-32 h-48 sm:w-32 sm:h-32 md:w-48 md:h-48 mb-4 transition-opacity duration-1000 ease-in-out opacity-0 absolute top-0"
                                 style={{ backgroundColor: 'transparent', top: '-9rem' }}
                                 onLoadedData={(e) => e.target.classList.remove('opacity-0')}
                             >
