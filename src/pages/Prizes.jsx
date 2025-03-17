@@ -4,7 +4,7 @@ import PrizePoolHeader from '../assets/prizepool.svg';
 
 const Prizes = () => {
     return (
-        <div className="text-white relative flex flex-col items-center min-h-screen snap-start">
+        <div className="text-white relative flex flex-col items-center min-h-screen p-5 md:p-0 snap-start">
             <img src={TheFinalsHeader} alt="The Finals" className="mx-auto mt-24 mb-6" />
             <img src={PrizePoolHeader} alt="Prize Pool" className="mx-auto mb-2" />
             
