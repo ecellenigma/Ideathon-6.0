@@ -9,12 +9,12 @@ const LoadingAnimation = ({ onLoadingComplete }) => {
     useEffect(() => {
         const typewriterTimer = setTimeout(() => {
             setShowVideo(true);
-        }, 3500);
+        }, 1000);
 
         const loadingTimer = setTimeout(() => {
             setLoading(false);
             onLoadingComplete();
-        }, 8000);
+        }, 5000);
 
         return () => {
             clearTimeout(typewriterTimer);
@@ -34,8 +34,8 @@ const LoadingAnimation = ({ onLoadingComplete }) => {
                                 autoPlay
                                 loop
                                 preload="metadata"
-                                className="w-32 h-48 sm:w-32 sm:h-32 md:w-48 md:h-48 mb-4 transition-opacity duration-1000 ease-in-out opacity-0 absolute top-0"
-                                style={{ backgroundColor: 'transparent', top: '-9rem' }}
+                                className="w-48 h-48 sm:w-48 sm:h-32 md:w-96 md:h-48 mb-20 -z-30 transition-opacity  duration-1000 ease-in-out opacity-0 absolute top-0"
+                                style={{ backgroundColor: 'transparent', top: '-10rem' }}
                                 onLoadedData={(e) => e.target.classList.remove('opacity-0')}
                             >
                                 <source id="video-source" style={{ backgroundColor: 'transparent' }} src={videoSrc} type="video/mp4" />
