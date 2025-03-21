@@ -1,7 +1,7 @@
 import React from "react";
 /* eslint-disable-next-line */
 import { motion } from "framer-motion";
-import heroSvg from "../assets/icontop.svg";
+import heroSvg from "../assets/ideathon6.0.svg";
 
 import Navbar from "../components/Navbar";
 

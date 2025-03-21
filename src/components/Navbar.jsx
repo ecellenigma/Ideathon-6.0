@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import ideathon from "../assets/ideathon.svg";
 import six from "../assets/6.0.svg";
-import icon from "../assets/icontop.svg";
+import icon from "../assets/ideathon6.0.svg";
 import enigma from "../assets/enigma.svg";
 
 const Navbar = () => {
@@ -53,7 +53,7 @@ const Navbar = () => {
                     <img src={six} alt="6.0" className="h-4 w-auto" />
                 </div>
 
-                <ul className="hidden md:flex space-x-10">
+                <ul className="hidden font-[Montserrat] md:flex space-x-10">
                     <li>
                         <a
                             href="#home"
@@ -133,7 +133,7 @@ const Navbar = () => {
                     animate={{ x: 0 }}
                     exit={{ x: "-100%" }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="fixed top-0 right-4 w-3/4 h-full bg-[#030B15] text-white flex flex-col items-start space-y-6 p-6 z-40 shadow-lg"
+                    className="fixed top-0 font-tektur  w-full h-full bg-[#030B15] text-white flex flex-col items-start space-y-6 p-6 z-40 shadow-lg"
                 >
                     <button onClick={() => setIsOpen(false)} className="text-2xl self-end">
                         ✖
@@ -149,13 +149,13 @@ const Navbar = () => {
                         Tracks
                     </a>
                     <a href="#faqs" onClick={() => handleScroll("faqs")} className="hover:text-[#00C4F4] cursor-pointer">
-                        FAQs
+                        Faqs
                     </a>
                     <a href="#contact" onClick={() => handleScroll("contact")} className="hover:text-[#00C4F4] cursor-pointer">
                         Contact
                     </a>
 
-                    <button className="bg-[#00E0FF] text-[#030B15] px-4 py-2 rounded hover:bg-[#00C4F4] transition-colors duration-300">
+                    <button className="bg-[#00E0FF] font-sans text-[#030B15] px-4 py-2 rounded hover:bg-[#00C4F4] transition-colors duration-300">
                         Certificate
                     </button>
                     <button onClick={() => window.open("https://www.ecellnmit.in/", "_blank")}>
