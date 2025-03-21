@@ -1,7 +1,8 @@
 import React from "react";
 /* eslint-disable-next-line */
 import { motion } from "framer-motion";
-import heroSvg from "../assets/icontop.svg";
+import heroSvg from "../assets/ideathon6.0.svg";
+
 import Navbar from "../components/Navbar";
 import brochure from "../../public/brochure.pdf"
 import RedoAnimText from "../components/AnimatedText";
@@ -22,7 +23,7 @@ const Landing = () => {
                 <div className="relative w-full flex items-center justify-center">
                     <div className="relative w-full flex items-center justify-center">
                         <motion.img
-                            className="h-60 w-full relative z-10"
+                            className="h-60 relative z-10"
                             src={heroSvg}
                             alt=""
                             initial={{ scale: 1, filter: "drop-shadow(0px 0px 0px rgba(255,255,255,0))" }}
@@ -30,7 +31,7 @@ const Landing = () => {
                                 scale: 1.1,
                                 filter: "drop-shadow(0px 0px 30px rgba(255,255,255,0.8))",
                             }}
-                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                            transition={{ duration: 0.1, ease: "easeInOut" }}
                         />
                     </div>
                 </div>
@@ -39,7 +40,7 @@ const Landing = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-2xl font-tektur md:text-3xl font-bold"> Innovators  Ka
+                    <h1 className="text-2xl font-[Montserrat] md:text-3xl font-bold"> Innovators  Ka
                         Apna  Battlefield
                     </h1>
                 </div>
@@ -56,7 +57,7 @@ const Landing = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => window.open(brochure, '_blank')} // Opens PDF in new tab
-                        className="px-6 py-2 rounded cursor-pointer mt-10 font-medium bg-[#060505] text-white transition-all cursor-alias shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:bg-black hover:translate-y-[3px]"
+                        className="px-6 py-2 rounded cursor-pointer mt-10 font-medium bg-[#00C4F4] text-white transition-all cursor-alias shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:bg-[#00C4F4] hover:translate-y-[3px]"
                     >
                         View Brochure
                     </motion.button>
