@@ -119,7 +119,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center space-x-4">
-                    <button className="bg-[#00E0FF] text-[#030B15] px-4 py-2 md:mr-20 rounded hover:bg-[#00C4F4] transition-colors duration-300">
+                    <button className="bg-[#00E0FF] font-[Montserrat] text-[#030B15] px-4 py-2 cursor-pointer md:mr-20 rounded hover:bg-[#00c3f4a6] transition-colors duration-300">
                         Certificate
                     </button>
                     <button onClick={() => window.open("https://www.ecellnmit.in/", "_blank")}>
@@ -134,7 +134,7 @@ const Navbar = () => {
                     animate={{ x: 0 }}
                     exit={{ x: "-100%" }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="fixed top-0 font-tektur  w-full h-full bg-[#030B15] text-white flex flex-col items-start space-y-6 p-6 z-40 shadow-lg"
+                    className="fixed top-0 font-[Montserrat]  w-full h-full bg-[#030B15] text-white flex flex-col items-start space-y-6 p-6 z-40 shadow-lg"
                 >
                     <button onClick={() => setIsOpen(false)} className="text-2xl self-end">
                         ✖
@@ -156,7 +156,7 @@ const Navbar = () => {
                         Contact
                     </a>
 
-                    <button className="bg-[#00E0FF] font-sans text-[#030B15] px-4 py-2 rounded hover:bg-[#00C4F4] transition-colors duration-300">
+                    <button className="bg-[#00E0FF] font-[Montserrat] text-[#030B15] px-4 py-2 rounded hover:bg-[#00c3f4a6] transition-colors duration-300">
                         Certificate
                     </button>
                     <button onClick={() => window.open("https://www.ecellnmit.in/", "_blank")}>
