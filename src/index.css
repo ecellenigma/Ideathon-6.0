@@ -141,7 +141,7 @@
 }
 @font-face {
   font-family: 'Tektur';
-  src: url('/src/assets/fonts/Tektur-Bold.ttf') format('truetype');
+  src: url('/src/assets/Fonts/Tektur-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -150,3 +150,4 @@
 .font-tektur {
   font-family: 'Tektur', sans-serif;
 }
+

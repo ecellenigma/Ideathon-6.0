@@ -1,16 +1,24 @@
 import React from "react"
 import { LINKS } from "../constants";
+import Call from "../assets/call.svg";
+import Mail from "../assets/mail.svg";
+import Enigma from "../assets/enigma.svg";
+import Ideathon from "../assets/ideathon.svg";
+import Instagram from "../assets/insta.svg";
+import Facebook from "../assets/facebook.svg";
+import LinkedIn from "../assets/linkedin.svg";
+
 
 const Footer = () => {
   return (
-    <footer id='contact' className="text-white bg-[#030B15] w-full snap-start">
+    <footer id='contact' className="text-white  mt-5 bg-[#030B15] w-full snap-start">
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between">
         
         <div className="md:w-1/3 mb-6 md:mb-0">
             <h2 className="pl-15 text-xl font-bold uppercase tracking-wide">CONTACT US</h2>
             <div className="flex items-center space-x-4 mt-2">
                 <img
-                    src="src/assets/call.svg"
+                    src={Call}
                     alt="Call img"
                     className="h-8 w-8"
                 />
@@ -18,7 +26,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-4 mt-2">
                 <img
-                    src="src/assets/call.svg"
+                    src={Call}
                     alt="Call img"
                     className="h-8 w-8"
                 />
@@ -26,7 +34,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-4 mt-2">
                 <img
-                    src="src/assets/mail.svg"
+                    src={Mail}
                     alt="Mail img"
                     className="h-8 w-8"
                 />
@@ -36,12 +44,12 @@ const Footer = () => {
         
         <div className="flex flex-col items-center md:w-1/3">
           <img 
-            src="src/assets/enigma.svg"
+            src={Enigma}
             alt="Enigma Logo" 
             className="h-10 object-contain mb-4"
           />
           <img 
-            src="src/assets/ideathon.svg"
+            src={Ideathon}
             alt="Ideathon 2025 Logo" 
             className="h-12 object-contain mb-2"
           />
@@ -64,7 +72,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <img 
-            src="src/assets/insta.svg"
+            src={Instagram}
             alt="Instagram" 
             className="h-6 w-6 object-contain" 
           />
@@ -75,7 +83,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <img 
-            src="src/assets/facebook.svg"
+            src={Facebook}
             alt="Facebook" 
             className="h-6 w-6 object-contain" 
           />
@@ -86,7 +94,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <img 
-            src="src/assets/linkedin.svg"
+            src={LinkedIn}
             alt="LinkedIn" 
             className="h-6 w-6 object-contain" 
           />
@@ -95,7 +103,7 @@ const Footer = () => {
           href={`mailto:${LINKS.EMAIL}`} 
         >
           <img 
-            src="src/assets/mail.svg"
+            src={Mail}
             alt="Gmail" 
             className="h-6 w-6 object-contain" 
           />

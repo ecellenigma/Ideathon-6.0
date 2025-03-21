@@ -64,7 +64,7 @@ export default function RedoAnimText() {
   }, [currentSequence]);
 
   return (
-    <div className="flex space-x-2">
+    <div className="flex space-x-2 -m-px">
       {displayLetters.map((letter, index) => (
         <motion.img
           key={index}
@@ -73,7 +73,7 @@ export default function RedoAnimText() {
           initial={{ opacity: 0, y: -10, scale: 1 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           // transition={{ duration: 0.2, delay: index * 0.1 }} 
-          className="md:h-16 md:w-16 h-10 w-10"
+          className="md:h-16 md:w-16 h-10 w-8"
         />
       ))}
     </div>

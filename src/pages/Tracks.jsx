@@ -19,7 +19,7 @@ const Tracks = () => {
         <section id="tracks" className="text-white relative flex flex-col items-center min-h-screen snap-start" onMouseMove={handleMouseMove}>
             <img src={trackHeader} alt="Tracks" className="mx-auto mt-20 mb-12" />
 
-            <div className="grid  grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+            <div className="grid p-5  grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
                 <Tilt className="Tilt" tiltMaxAngleX={6.5} tiltMaxAngleY={6.5} scale={1.03} transitionSpeed={2000}>
                     <div className="Tilt-inner border border-[#00e5ff] rounded-2xl p-8 bg-[#060d19] shadow-[0_0_4px_rgba(0,229,255,0.5)] flex flex-col items-start justify-start mb-12 transition-all duration-500 cursor-pointer hover:shadow-[0_0_16px_rgb(0,173,216)] h-full">
                         <div className="bg-[#1c1c24] rounded-full p-4 mb-4 flex items-center justify-center">

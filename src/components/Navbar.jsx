@@ -1,3 +1,4 @@
+/* eslint-disable-next-line no-unused-vars */
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import ideathon from "../assets/ideathon.svg";
