@@ -14,7 +14,7 @@ export default function Sponsors() {
                 {/* Knowledge Sponsor Section */}
                 <div className="text-center">
                     <h2 className="text-2xl mt-10 md:text-4xl font-['Delivery'] text-[#00e5ff] font-bold mb-4">
-                        OUR KNOWLEDGE SPONSOR
+                        OUR KNOWLEDGE PARTNER
                     </h2>
                     <img src={sponsor1} alt="Knowledge Partner" className="mx-auto border-3 border-[#00e5ff] rounded-lg w-64 md:w-90" />
                 </div>
@@ -22,7 +22,7 @@ export default function Sponsors() {
                 {/* Coding Sponsor Section */}
                 <div className="text-center">
                     <h2 className="text-2xl md:text-3xl font-['Delivery'] text-[#00e5ff] font-bold mb-4 mt-10">
-                        OUR CODING SPONSOR
+                        OUR CODING PARTNER
                     </h2>
                     <img src={sponsor2} alt="Coding Sponsor" className="mx-auto border-3 border-[#00e5ff] rounded-lg w-54 md:w-70" />
                 </div>
@@ -30,7 +30,7 @@ export default function Sponsors() {
                 {/* Marketing Sponsor Section */}
                 <div className="text-center">
                     <h2 className="text-2xl md:text-xl font-['Delivery'] text-[#00e5ff] font-bold mb-4 mt-10">
-                        OUR MARKETING SPONSOR
+                        OUR MARKETING PARTNER
                     </h2>
                     <img src={sponsor5} alt="Marketing Sponsor" className="mx-auto border-3 border-[#00e5ff] rounded-lg w-40 md:w-54" />
                 </div>
