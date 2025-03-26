@@ -16,7 +16,7 @@ export default function Sponsors() {
                     <h2 className="text-2xl mt-10 md:text-4xl font-['Delivery'] text-[#00e5ff] font-bold mb-4">
                         OUR KNOWLEDGE SPONSOR
                     </h2>
-                    <img src={sponsor1} alt="Knowledge Partner" className="mx-auto w-64 md:w-90" />
+                    <img src={sponsor1} alt="Knowledge Partner" className="mx-auto border-3 border-[#00e5ff] rounded-lg w-64 md:w-90" />
                 </div>
 
                 {/* Coding Sponsor Section */}
@@ -24,7 +24,7 @@ export default function Sponsors() {
                     <h2 className="text-2xl md:text-3xl font-['Delivery'] text-[#00e5ff] font-bold mb-4 mt-10">
                         OUR CODING SPONSOR
                     </h2>
-                    <img src={sponsor2} alt="Coding Sponsor" className="mx-auto w-54 md:w-70" />
+                    <img src={sponsor2} alt="Coding Sponsor" className="mx-auto border-3 border-[#00e5ff] rounded-lg w-54 md:w-70" />
                 </div>
 
                 {/* Marketing Sponsor Section */}
@@ -32,7 +32,7 @@ export default function Sponsors() {
                     <h2 className="text-2xl md:text-xl font-['Delivery'] text-[#00e5ff] font-bold mb-4 mt-10">
                         OUR MARKETING SPONSOR
                     </h2>
-                    <img src={sponsor5} alt="Marketing Sponsor" className="mx-auto w-40 md:w-54" />
+                    <img src={sponsor5} alt="Marketing Sponsor" className="mx-auto border-3 border-[#00e5ff] rounded-lg w-40 md:w-54" />
                 </div>
 
                 {/* Other Sponsors Section */}
@@ -41,10 +41,10 @@ export default function Sponsors() {
                         OUR OTHER PARTNERS
                     </h2>
                     <div className="flex flex-wrap justify-center gap-8">
-                        <img src={sponsor7} alt="Other Sponsor 1" className="w-20 md:w-38" />
-                        <img src={sponsor4} alt="Other Sponsor 2" className="w-20 md:w-26" />
-                        <img src={sponsor3} alt="Other Sponsor 3" className="w-20 md:w-26" />
-                        <img src={sponsor6} alt="Other Sponsor 4" className="w-20 md:w-38" />
+                        <img src={sponsor7} alt="Other Sponsor 1" className="w-20 border-3 border-[#00e5ff] rounded-lg md:w-38" />
+                        <img src={sponsor4} alt="Other Sponsor 2" className="w-20 border-3 border-[#00e5ff] rounded-lg md:w-26" />
+                        <img src={sponsor3} alt="Other Sponsor 3" className="w-20 border-3 border-[#00e5ff] rounded-lg md:w-26" />
+                        <img src={sponsor6} alt="Other Sponsor 4" className="w-20 border-3 border-[#00e5ff] rounded-lg md:w-38" />
                     </div>
                 </div>
             </div>
