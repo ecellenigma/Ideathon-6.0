@@ -118,7 +118,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center space-x-4">
-                    <button className="bg-[#00E0FF] text-[#030B15] px-4 py-2 md:mr-20 rounded hover:bg-[#00C4F4] transition-colors duration-300">
+                    <button onClick={() => window.open("https://certificates.ecellnmit.in/", "_blank")} className="bg-[#00E0FF] text-[#030B15] px-4 py-2 md:mr-20 rounded hover:bg-[#00C4F4] transition-colors duration-300">
                         Certificate
                     </button>
                     <button onClick={() => window.open("https://www.ecellnmit.in/", "_blank")}>
@@ -155,7 +155,7 @@ const Navbar = () => {
                         Contact
                     </a>
 
-                    <button className="bg-[#00E0FF] font-sans text-[#030B15] px-4 py-2 rounded hover:bg-[#00C4F4] transition-colors duration-300">
+                    <button onClick={() => window.open("https://certificates.ecellnmit.in/", "_blank")} className="bg-[#00E0FF] font-sans text-[#030B15] px-4 py-2 rounded hover:bg-[#00C4F4] transition-colors duration-300">
                         Certificate
                     </button>
                     <button onClick={() => window.open("https://www.ecellnmit.in/", "_blank")}>
