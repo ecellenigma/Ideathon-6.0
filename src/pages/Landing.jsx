@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import heroSvg from "../assets/icontop.svg";
+import heroSvg from "../assets/ideathon6.0.svg";
+
 import Navbar from "../components/Navbar";
 import brochure from "../../public/brochure.pdf";
 import RedoAnimText from "../components/AnimatedText";
@@ -21,6 +22,7 @@ const Landing = () => {
                 transition={{ duration: 1 }}
             >
 
+
                 <div className="relative w-full md:mt-7 flex items-center justify-center">
                     <motion.img
                         className="h-60 w-full relative z-10"
@@ -39,9 +41,11 @@ const Landing = () => {
                     <RedoAnimText />
                 </div>
 
+
                 <h1 className="text-2xl font-tektur md:text-3xl font-bold">
                     Innovators Ka Apna Battlefield
                 </h1>
+
 
                 <div className="flex gap-7 md:gap-8 items-center justify-center">
                     <motion.button
@@ -60,7 +64,7 @@ const Landing = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => window.open(brochure, '_blank')} // Opens PDF in new tab
-                        className="px-6 py-2 rounded cursor-pointer mt-10 font-medium bg-[#060505] text-white transition-all cursor-alias shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:bg-black hover:translate-y-[3px]"
+                        className="px-6 py-2 rounded cursor-pointer mt-10 font-medium bg-[#00C4F4] text-white transition-all cursor-alias shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:bg-[#00C4F4] hover:translate-y-[3px]"
                     >
                         View Brochure
                     </motion.button>

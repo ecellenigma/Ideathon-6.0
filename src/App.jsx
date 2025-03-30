@@ -9,6 +9,7 @@ import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import DottedParticles from './components/Dotted';
+import Sponsors from './pages/Sponsors';
 import LoadingAnimation from './components/LoadingAnimation';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
                         <Tracks />
                         <Prizes />
                         <WhatsInIt />
+                        <Sponsors />
                         <FAQ />
                         <Contact />
                         <Footer />
