@@ -35,7 +35,7 @@ const WhatsInIt = () => {
 
                 <Tilt className="Tilt" tiltMaxAngleX={12} tiltMaxAngleY={12} scale={1.03} transitionSpeed={2000}>
                     <div className="Tilt-inner border-2 border-[#00e5ff] rounded-lg p-8 bg-[#060d19] shadow-[0_0_4px_rgba(0,229,255,0.5)] h-full w-full mx-auto flex flex-col items-center justify-center transition-all duration-500 cursor-pointer hover:shadow-[0_0_12px_rgb(0,173,216)]">
-                        <img src={mentoring} alt="Mentoring Icon" className="w-16 h-16 mb-6 text-[#00e5ff]" />
+                        <img src={mentoring} alt="Mentoring Icon" className="w-18 h-18 mb-6 text-[#00e5ff]" />
                         <p className="text-white font-['Montserrat'] text-[3vh] text-center leading-tight">
                             Mentoring Sessions
                         </p>
